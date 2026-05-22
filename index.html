@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Velocity | Lead Response Systems</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&amp;family=Space+Grotesk:wght@400;500;700;800&amp;family=JetBrains+Mono:wght@500&amp;display=swap" rel="stylesheet"/>
+<!-- Import Switzer font -->
+<link href="https://api.fontshare.com/v2/css?f[]=switzer@900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                "tertiary-fixed": "#d6e3ff",
+                "tertiary": "#0055ff",
+                "on-surface-variant": "#4a4a4a",
+                "on-secondary-fixed-variant": "#1a1a1a",
+                "on-error-container": "#93000a",
+                "on-secondary-container": "#1a1a1a",
+                "surface-bright": "#faf7f2",
+                "background": "#f5f0e8",
+                "surface-variant": "#e8e3da",
+                "primary-fixed-dim": "#e6b800",
+                "on-primary-fixed-variant": "#1a1a1a",
+                "secondary": "#e63b2e",
+                "on-tertiary-container": "#1a1a1a",
+                "error": "#cc0000",
+                "surface-container-low": "#f2ede5",
+                "on-primary": "#ffffff",
+                "outline-variant": "#1a1a1a",
+                "surface-tint": "#1a1a1a",
+                "surface-container": "#eee9e0",
+                "on-background": "#1a1a1a",
+                "surface-container-highest": "#e2ddd4",
+                "surface-container-lowest": "#ffffff",
+                "surface": "#f5f0e8",
+                "on-primary-container": "#1a1a1a",
+                "outline": "#1a1a1a",
+                "on-tertiary-fixed": "#1a1a1a",
+                "on-error": "#ffffff",
+                "surface-dim": "#d6d1c9",
+                "secondary-container": "#ffdad6",
+                "inverse-on-surface": "#f5f0e8",
+                "surface-container-high": "#e8e3da",
+                "secondary-fixed": "#ffdad6",
+                "primary-container": "#ffcc00",
+                "on-secondary": "#1a1a1a",
+                "on-primary-fixed": "#1a1a1a",
+                "on-surface": "#1a1a1a",
+                "on-secondary-fixed": "#1a1a1a",
+                "on-tertiary": "#ffffff",
+                "primary": "#1a1a1a",
+                "error-container": "#ffdad6",
+                "tertiary-fixed-dim": "#a8c6ff",
+                "inverse-surface": "#1a1a1a",
+                "secondary-fixed-dim": "#ffb3ab",
+                "primary-fixed": "#ffcc00",
+                "inverse-primary": "#f5f0e8",
+                "on-tertiary-fixed-variant": "#1a1a1a",
+                "on-tertiary-fixed": "#1a1a1a",
+                "tertiary-container": "#d6e3ff",
+                "bauhaus-red": "#e63b2e",
+                "bauhaus-yellow": "#ffcc00",
+                "bauhaus-blue": "#0055ff",
+                "carbon": "#1a1a1a",
+                "chalk": "#f5f0e8"
+            },
+            "borderRadius": {
+                "DEFAULT": "0px",
+                "lg": "0px",
+                "xl": "0px",
+                "full": "9999px",
+                "bauhaus": "0.25rem"
+            },
+            "spacing": {
+                "section-v-padding": "140px",
+                "stack-md": "24px",
+                "stack-sm": "8px",
+                "margin-mobile": "24px",
+                "margin-desktop": "80px",
+                "stack-lg": "48px",
+                "gutter": "32px"
+            },
+            "fontFamily": {
+                "headline": ["Switzer", "Space Grotesk", "sans-serif"],
+                "display": ["Switzer", "Space Grotesk", "sans-serif"],
+                "body": ["Inter"],
+                "label": ["Space Grotesk"],
+                "metrics": ["Switzer", "JetBrains Mono", "monospace"]
+            },
+            "fontSize": {
+                "label-cta": ["14px", {"lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "700"}],
+                "body-md": ["17px", {"lineHeight": "26px", "letterSpacing": "0", "fontWeight": "400"}],
+                "headline-section-mobile": ["40px", {"lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "900"}],
+                "headline-section": ["72px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "900"}],
+                "hero-display-mobile": ["56px", {"lineHeight": "52px", "letterSpacing": "-0.02em", "fontWeight": "900"}],
+                "hero-display": ["112px", {"lineHeight": "100px", "letterSpacing": "-0.04em", "fontWeight": "900"}],
+                "metrics": ["20px", {"lineHeight": "24px", "fontWeight": "500"}],
+                "label-nav": ["13px", {"lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            -webkit-font-smoothing: antialiased;
+            text-rendering: optimizeLegibility;
+            background-color: #f5f0e8;
+            font-family: 'Inter', sans-serif;
+        }
+        h1, h2, h3 {
+            font-family: 'Switzer', sans-serif;
+            font-weight: 900;
+        }
+        .tabular-nums { font-variant-numeric: tabular-nums; }
+        .hero-title { text-wrap: balance; }
+        .border-bauhaus { border: 2px solid #1a1a1a; }
+        .font-metrics-large { font-family: 'Switzer', sans-serif; font-weight: 900; }
+    </style>
+</head>
+<body class="text-on-background selection:bg-bauhaus-yellow selection:text-carbon">
+<!-- TopNavBar -->
+<header class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-margin-desktop h-[72px] bg-white border-b-2 border-primary">
+<div class="font-label-nav text-[18px] font-bold tracking-tight text-primary uppercase">Velocity</div>
+<nav class="hidden md:flex items-center gap-10">
+<a class="font-label-nav text-label-nav text-primary border-b-2 border-primary pb-0.5" href="#">Solutions</a>
+<a class="font-label-nav text-label-nav text-primary/60 hover:text-primary transition-colors" href="#">Process</a>
+<a class="font-label-nav text-label-nav text-primary/60 hover:text-primary transition-colors" href="#">Insights</a>
+</nav>
+<button class="bg-primary text-white px-6 py-2.5 font-label-cta text-label-cta hover:bg-bauhaus-red transition-colors border-2 border-primary rounded-bauhaus">Request Access</button>
+</header>
+<!-- 1. Hero -->
+<section class="min-h-screen pt-[72px] px-margin-desktop flex flex-col justify-center relative bg-bauhaus-yellow">
+<div class="grid grid-cols-12 w-full">
+<div class="col-span-12 md:col-span-10">
+<h1 class="text-[clamp(56px,10vw,112px)] leading-[0.9] font-black hero-title text-primary mb-stack-lg uppercase font-headline">
+                Lead response time wins patients.
+            </h1>
+<p class="text-xl md:text-2xl font-medium text-primary max-w-2xl border-l-4 border-primary pl-6">
+                Velocity responds to every inbound inquiry the moment it arrives—so your practice books more consultations without adding headcount.
+            </p>
+</div>
+</div>
+<div class="absolute bottom-margin-desktop right-margin-desktop text-right">
+<span class="font-label-nav text-label-nav text-primary/40 tracking-widest uppercase block mb-1">Status</span>
+<span class="font-metrics text-metrics text-primary tabular-nums font-bold">Active Monitoring</span>
+</div>
+</section>
+<!-- 2. Metrics -->
+<section class="bg-primary py-stack-lg px-margin-desktop overflow-hidden border-y-4 border-primary">
+<div class="grid grid-cols-12 gap-gutter py-12">
+<div class="col-span-12 md:col-span-4 flex flex-col gap-2 border-l-4 border-bauhaus-red pl-6">
+<span class="text-6xl md:text-8xl font-black text-white tabular-nums font-metrics-large">&lt; 60s</span>
+<span class="font-label-nav text-label-nav text-white/60 uppercase tracking-[0.2em]">Avg. first response</span>
+</div>
+<div class="col-span-12 md:col-span-4 flex flex-col gap-2 border-l-4 border-bauhaus-blue pl-6">
+<span class="text-6xl md:text-8xl font-black text-white tabular-nums font-metrics-large">3x</span>
+<span class="font-label-nav text-label-nav text-white/60 uppercase tracking-[0.2em]">Increase in consultations</span>
+</div>
+<div class="col-span-12 md:col-span-4 flex flex-col gap-2 border-l-4 border-bauhaus-yellow pl-6">
+<span class="text-6xl md:text-8xl font-black text-white tabular-nums font-metrics-large">24/7</span>
+<span class="font-label-nav text-label-nav text-white/60 uppercase tracking-[0.2em]">Lead coverage</span>
+</div>
+</div>
+</section>
+<!-- 3. Problem -->
+<section class="py-section-v-padding px-margin-desktop bg-white">
+<div class="grid grid-cols-12 gap-gutter items-end">
+<div class="col-span-12 md:col-span-7">
+<h2 class="text-5xl md:text-7xl text-primary mb-stack-lg leading-tight uppercase font-black font-headline">
+                Most practices lose leads before lunch.
+            </h2>
+<div class="max-w-xl">
+<p class="text-lg md:text-xl text-primary font-medium leading-relaxed">
+                    The 2-3 hour response gap is where high-value patient inquiries go to die. In a competitive clinical landscape, the patient experience begins with the first click. If your front desk is busy with patients in the room, potential new consultations are being ignored.
+                </p>
+</div>
+</div>
+<div class="col-span-12 md:col-span-5 flex flex-col justify-end items-end h-full">
+<div class="border-t-4 border-primary w-full pt-8 flex justify-between items-baseline">
+<span class="font-label-nav text-label-nav text-primary uppercase tracking-[0.2em]">Lead Abandonment Rate</span>
+<span class="text-6xl md:text-8xl font-black text-primary tabular-nums font-metrics-large">78%</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Divider Line -->
+<div class="mx-margin-desktop h-[4px] bg-primary"></div>
+<!-- 4. Solution -->
+<section class="py-section-v-padding px-margin-desktop bg-chalk">
+<div class="grid grid-cols-12 gap-gutter items-start">
+<div class="col-span-12 md:col-span-5 mb-stack-lg md:mb-0">
+<p class="text-3xl md:text-4xl font-bold text-primary leading-tight border-4 border-primary p-8 bg-white shadow-[8px_8px_0px_0px_rgba(26,26,26,1)]">
+                "Every inquiry. Instant response. Zero delays."
+            </p>
+</div>
+<div class="col-span-12 md:col-span-7">
+<h2 class="text-5xl md:text-7xl text-primary mb-stack-lg leading-[0.9] uppercase font-black font-headline">
+                Velocity responds before your front desk can.
+            </h2>
+<div class="max-w-xl">
+<p class="text-lg md:text-xl text-primary/80 font-medium">
+                    Our intelligent systems integrate directly with your intake channels, qualifying leads and setting expectations while your clinical team focuses on the patients in front of them. We bridge the gap between curiosity and consultation.
+                </p>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. Process -->
+<section class="py-section-v-padding px-margin-desktop bg-primary text-white">
+<div class="grid grid-cols-12 mb-stack-lg">
+<div class="col-span-12">
+<h2 class="text-5xl md:text-7xl mb-stack-lg uppercase font-black font-headline">Four steps. Zero friction.</h2>
+</div>
+</div>
+<div class="space-y-0">
+<!-- 01 -->
+<div class="grid grid-cols-12 py-12 border-t-2 border-white/20 items-center group hover:bg-bauhaus-red transition-colors">
+<div class="col-span-2 text-4xl text-bauhaus-yellow tabular-nums font-black font-metrics-large">01</div>
+<div class="col-span-6 text-3xl md:text-4xl uppercase font-black font-headline">Capture</div>
+<div class="col-span-4 text-lg text-white/80 font-medium">Universal intake from web, social, and search.</div>
+</div>
+<!-- 02 -->
+<div class="grid grid-cols-12 py-12 border-t-2 border-white/20 items-center group hover:bg-bauhaus-blue transition-colors">
+<div class="col-span-2 text-4xl text-bauhaus-yellow tabular-nums font-black font-metrics-large">02</div>
+<div class="col-span-6 text-3xl md:text-4xl uppercase font-black font-headline">Engage</div>
+<div class="col-span-4 text-lg text-white/80 font-medium">Sub-60-second personalized acknowledgement.</div>
+</div>
+<!-- 03 -->
+<div class="grid grid-cols-12 py-12 border-t-2 border-white/20 items-center group hover:bg-bauhaus-yellow hover:text-primary transition-colors">
+<div class="col-span-2 text-4xl text-bauhaus-red tabular-nums font-black font-metrics-large">03</div>
+<div class="col-span-6 text-3xl md:text-4xl uppercase font-black font-headline">Qualify</div>
+<div class="col-span-4 text-lg text-white/80 group-hover:text-primary/80 font-medium">Automated screening based on your criteria.</div>
+</div>
+<!-- 04 -->
+<div class="grid grid-cols-12 py-12 border-t-2 border-b-4 border-white/20 items-center group hover:bg-white hover:text-primary transition-colors">
+<div class="col-span-2 text-4xl text-bauhaus-blue tabular-nums font-black font-metrics-large">04</div>
+<div class="col-span-6 text-3xl md:text-4xl uppercase font-black font-headline">Book</div>
+<div class="col-span-4 text-lg text-white/80 group-hover:text-primary/80 font-medium">Direct sync to your practice management software.</div>
+</div>
+</div>
+</section>
+<!-- 6. Results -->
+<section class="py-section-v-padding px-margin-desktop bg-white">
+<div class="space-y-6 mb-[120px]">
+<h3 class="text-6xl md:text-8xl font-black text-primary leading-none uppercase font-headline">More consultations...</h3>
+<h3 class="text-6xl md:text-8xl font-black text-bauhaus-red leading-none uppercase font-headline">Less pressure...</h3>
+<h3 class="text-6xl md:text-8xl font-black text-bauhaus-blue leading-none uppercase font-headline">Better ROI...</h3>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 pt-stack-lg border-t-4 border-primary">
+<div class="border-l-4 border-primary pl-6">
+<span class="block font-label-nav text-label-nav text-primary/40 mb-2 uppercase tracking-[0.2em]">Practice Efficiency</span>
+<span class="text-4xl font-black tabular-nums text-primary font-metrics-large">+45%</span>
+</div>
+<div class="border-l-4 border-primary pl-6">
+<span class="block font-label-nav text-label-nav text-primary/40 mb-2 uppercase tracking-[0.2em]">Staff Retention</span>
+<span class="text-4xl font-black tabular-nums text-primary font-metrics-large">+22%</span>
+</div>
+<div class="border-l-4 border-primary pl-6">
+<span class="block font-label-nav text-label-nav text-primary/40 mb-2 uppercase tracking-[0.2em]">Net Patient Rev</span>
+<span class="text-4xl font-black tabular-nums text-primary font-metrics-large">+31%</span>
+</div>
+</div>
+</section>
+<!-- 7. Final CTA -->
+<section class="py-section-v-padding px-margin-desktop bg-bauhaus-red text-white text-center">
+<div class="max-w-4xl mx-auto flex flex-col items-center">
+<h2 class="text-5xl md:text-7xl mb-stack-lg text-white hero-title uppercase leading-[0.9] font-black font-headline">
+            Your next patient inquiry is 60 seconds away.
+        </h2>
+<button class="bg-primary text-white px-12 py-6 font-label-cta text-lg uppercase tracking-[0.1em] hover:bg-white hover:text-primary transition-all duration-300 border-4 border-primary rounded-bauhaus shadow-[10px_10px_0px_0px_rgba(255,255,255,0.3)]">
+            Start Velocity Trial
+        </button>
+</div>
+</section>
+<!-- Footer -->
+<footer class="w-full px-margin-desktop py-stack-md flex flex-col md:row justify-between items-center bg-white border-t-4 border-primary gap-6 md:gap-0">
+<div class="font-label-nav text-[18px] font-bold text-primary uppercase">Velocity</div>
+<div class="flex gap-8">
+<a class="font-label-nav text-label-nav text-primary/60 hover:text-primary font-bold uppercase" href="#">Terms</a>
+<a class="font-label-nav text-label-nav text-primary/60 hover:text-primary font-bold uppercase" href="#">Privacy</a>
+<a class="font-label-nav text-label-nav text-primary/60 hover:text-primary font-bold uppercase" href="#">Identity</a>
+</div>
+<div class="font-label-nav text-label-nav text-primary/40 font-medium">
+        © 2024 Velocity Architectural Systems. All rights reserved.
+    </div>
+</footer>
+<script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+</script>
+</body></html>
