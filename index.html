@@ -3,7 +3,7 @@
 <html class="light" lang="en"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Velocity | Lead Response Systems</title>
+<title>Velocity | Patient Acquisition &amp; Conversion System</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&amp;family=Space+Grotesk:wght@400;500;700;800&amp;family=JetBrains+Mono:wght@500&amp;display=swap" rel="stylesheet"/>
 <!-- Import Switzer font -->
@@ -112,6 +112,7 @@
             text-rendering: optimizeLegibility;
             background-color: #f5f0e8;
             font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
         }
         h1, h2, h3 {
             font-family: 'Switzer', sans-serif;
@@ -121,6 +122,30 @@
         .hero-title { text-wrap: balance; }
         .border-bauhaus { border: 2px solid #1a1a1a; }
         .font-metrics-large { font-family: 'Switzer', sans-serif; font-weight: 900; }
+        
+        /* Form Styling */
+        input, select, textarea {
+            background: transparent !important;
+            border: none !important;
+            border-bottom: 2px solid #1a1a1a !important;
+            border-radius: 0 !important;
+            padding: 1rem 0 !important;
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 500;
+        }
+        input:focus, select:focus, textarea:focus {
+            outline: none !important;
+            border-bottom-color: #e63b2e !important;
+            box-shadow: none !important;
+        }
+        label {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-weight: 700;
+            color: rgba(26, 26, 26, 0.6);
+        }
     </style>
 </head>
 <body class="text-on-background selection:bg-bauhaus-yellow selection:text-carbon">
@@ -129,10 +154,11 @@
 <div class="font-label-nav text-[18px] font-bold tracking-tight text-primary uppercase">Velocity</div>
 <nav class="hidden md:flex items-center gap-10">
 <a class="font-label-nav text-label-nav text-primary border-b-2 border-primary pb-0.5" href="#">Solutions</a>
-<a class="font-label-nav text-label-nav text-primary/60 hover:text-primary transition-colors" href="#">Process</a>
-<a class="font-label-nav text-label-nav text-primary/60 hover:text-primary transition-colors" href="#">Insights</a>
+<a class="font-label-nav text-label-nav text-primary/60 hover:text-primary transition-colors" href="#how-it-works">How It Works</a>
+<a class="font-label-nav text-label-nav text-primary/60 hover:text-primary transition-colors" href="#results">Results</a>
+<a class="font-label-nav text-label-nav text-primary/60 hover:text-primary transition-colors" href="#contact">Contact</a>
 </nav>
-<button class="bg-primary text-white px-6 py-2.5 font-label-cta text-label-cta hover:bg-bauhaus-red transition-colors border-2 border-primary rounded-bauhaus">Request Access</button>
+<a class="bg-primary text-white px-6 py-2.5 font-label-cta text-label-cta hover:bg-bauhaus-red transition-colors border-2 border-primary rounded-bauhaus" href="#contact">Get a Patient Acquisition Audit</a>
 </header>
 <!-- 1. Hero -->
 <section class="min-h-screen pt-[72px] px-margin-desktop flex flex-col justify-center relative bg-bauhaus-yellow">
@@ -142,17 +168,17 @@
                 Lead response time wins patients.
             </h1>
 <p class="text-xl md:text-2xl font-medium text-primary max-w-2xl border-l-4 border-primary pl-6">
-                Velocity responds to every inbound inquiry the moment it arrives—so your practice books more consultations without adding headcount.
+                Velocity is a patient acquisition and conversion system for dental practices that responds to every inbound inquiry the moment it arrives—so you book more consultations and recover lost revenue.
             </p>
 </div>
 </div>
 <div class="absolute bottom-margin-desktop right-margin-desktop text-right">
 <span class="font-label-nav text-label-nav text-primary/40 tracking-widest uppercase block mb-1">Status</span>
-<span class="font-metrics text-metrics text-primary tabular-nums font-bold">Active Monitoring</span>
+<span class="font-metrics text-metrics text-primary tabular-nums font-bold">System Active</span>
 </div>
 </section>
-<!-- 2. Metrics -->
-<section class="bg-primary py-stack-lg px-margin-desktop overflow-hidden border-y-4 border-primary">
+<!-- 2. Metrics (Results Preview) -->
+<section class="bg-primary py-stack-lg px-margin-desktop overflow-hidden border-y-4 border-primary" id="results">
 <div class="grid grid-cols-12 gap-gutter py-12">
 <div class="col-span-12 md:col-span-4 flex flex-col gap-2 border-l-4 border-bauhaus-red pl-6">
 <span class="text-6xl md:text-8xl font-black text-white tabular-nums font-metrics-large">&lt; 60s</span>
@@ -205,14 +231,14 @@
             </h2>
 <div class="max-w-xl">
 <p class="text-lg md:text-xl text-primary/80 font-medium">
-                    Our intelligent systems integrate directly with your intake channels, qualifying leads and setting expectations while your clinical team focuses on the patients in front of them. We bridge the gap between curiosity and consultation.
+                    Our intake systems integrate directly with your patient acquisition channels, qualifying leads and setting expectations while your clinical team focuses on the patients in front of them. We bridge the gap between curiosity and consultation.
                 </p>
 </div>
 </div>
 </div>
 </section>
-<!-- 5. Process -->
-<section class="py-section-v-padding px-margin-desktop bg-primary text-white">
+<!-- 5. Process / How It Works -->
+<section class="py-section-v-padding px-margin-desktop bg-primary text-white" id="how-it-works">
 <div class="grid grid-cols-12 mb-stack-lg">
 <div class="col-span-12">
 <h2 class="text-5xl md:text-7xl mb-stack-lg uppercase font-black font-headline">Four steps. Zero friction.</h2>
@@ -235,19 +261,20 @@
 <div class="grid grid-cols-12 py-12 border-t-2 border-white/20 items-center group hover:bg-bauhaus-yellow hover:text-primary transition-colors">
 <div class="col-span-2 text-4xl text-bauhaus-red tabular-nums font-black font-metrics-large">03</div>
 <div class="col-span-6 text-3xl md:text-4xl uppercase font-black font-headline">Qualify</div>
-<div class="col-span-4 text-lg text-white/80 group-hover:text-primary/80 font-medium">Automated screening based on your criteria.</div>
+<div class="col-span-4 text-lg text-white/80 group-hover:text-primary/80 font-medium">Automated screening based on your practice criteria.</div>
 </div>
 <!-- 04 -->
 <div class="grid grid-cols-12 py-12 border-t-2 border-b-4 border-white/20 items-center group hover:bg-white hover:text-primary transition-colors">
 <div class="col-span-2 text-4xl text-bauhaus-blue tabular-nums font-black font-metrics-large">04</div>
 <div class="col-span-6 text-3xl md:text-4xl uppercase font-black font-headline">Book</div>
-<div class="col-span-4 text-lg text-white/80 group-hover:text-primary/80 font-medium">Direct sync to your practice management software.</div>
+<div class="col-span-4 text-lg text-white/80 group-hover:text-primary/80 font-medium">Direct sync to your practice management system.</div>
 </div>
 </div>
 </section>
-<!-- 6. Results -->
+<!-- 6. Results Section -->
 <section class="py-section-v-padding px-margin-desktop bg-white">
 <div class="space-y-6 mb-[120px]">
+<h2 class="text-label-nav text-primary uppercase tracking-[0.2em] mb-8">Outcomes &amp; ROI</h2>
 <h3 class="text-6xl md:text-8xl font-black text-primary leading-none uppercase font-headline">More consultations...</h3>
 <h3 class="text-6xl md:text-8xl font-black text-bauhaus-red leading-none uppercase font-headline">Less pressure...</h3>
 <h3 class="text-6xl md:text-8xl font-black text-bauhaus-blue leading-none uppercase font-headline">Better ROI...</h3>
@@ -267,19 +294,72 @@
 </div>
 </div>
 </section>
-<!-- 7. Final CTA -->
-<section class="py-section-v-padding px-margin-desktop bg-bauhaus-red text-white text-center">
+<!-- 6.5 FAQ Section -->
+<section class="py-section-v-padding px-margin-desktop bg-surface-container-low">
+<div class="grid grid-cols-12 gap-gutter">
+<div class="col-span-12 md:col-span-4">
+<h2 class="text-5xl uppercase font-black font-headline text-primary mb-8 md:mb-0">Common Questions</h2>
+</div>
+<div class="col-span-12 md:col-span-8 space-y-12">
+<div>
+<h4 class="text-xl font-bold uppercase mb-4 text-primary">How quickly does Velocity respond?</h4>
+<p class="text-lg text-primary/70 max-w-xl">Every lead receives a personalized outreach in under 60 seconds, 24/7/365. This ensures you are the first practice they hear from.</p>
+</div>
+<div>
+<h4 class="text-xl font-bold uppercase mb-4 text-primary">Does it work after hours?</h4>
+<p class="text-lg text-primary/70 max-w-xl">Yes. Velocity is active when your team is sleeping, ensuring weekend and late-night leads are captured and qualified instantly.</p>
+</div>
+<div>
+<h4 class="text-xl font-bold uppercase mb-4 text-primary">Will it replace my staff?</h4>
+<p class="text-lg text-primary/70 max-w-xl">No. Velocity supports your staff by handling the repetitive initial outreach and qualification, allowing them to focus on high-value in-office patient care.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 7. Lead Qualification Form (New) -->
+<section class="py-section-v-padding px-margin-desktop bg-white" id="contact">
+<div class="grid grid-cols-12 gap-gutter">
+<div class="col-span-12 md:col-span-5">
+<h2 class="text-5xl md:text-7xl uppercase font-black font-headline text-primary leading-[0.9] mb-stack-lg">
+                Request Your Patient Acquisition Audit.
+            </h2>
+<p class="text-xl text-primary/60 font-medium max-w-md">
+                We'll analyze your current response times and identify exactly where revenue is leaking from your funnel.
+            </p>
+</div>
+<div class="col-span-12 md:col-span-7">
+<div class="space-y-12">
+<div class="space-y-6">
+<h3 class="text-5xl md:text-6xl font-black font-headline text-primary uppercase leading-none">Silence is costing you patients.</h3>
+<p class="text-xl md:text-2xl font-medium text-primary/80 leading-relaxed max-w-xl">The average patient inquiry goes cold in minutes. While your front desk handles the room, high-value leads are expiring in your inbox.</p>
+</div>
+<div class="space-y-4 border-l-4 border-bauhaus-red pl-8 py-2">
+<p class="text-lg font-bold uppercase tracking-wider text-primary">Speed is the primary variable in patient conversion.</p>
+<p class="text-lg font-bold uppercase tracking-wider text-primary">Unanswered leads are lost revenue.</p>
+</div>
+<div class="pt-4 space-y-8">
+<p class="text-lg font-medium text-primary/60 italic">Request a Patient Acquisition Audit to see what your practice is currently missing.</p>
+<a class="inline-block w-full md:w-auto bg-primary text-white px-12 py-6 font-label-cta text-lg uppercase tracking-[0.1em] hover:bg-bauhaus-red transition-all duration-300 border-4 border-primary text-center" href="#">
+      Get a Patient Acquisition Audit
+    </a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 8. Final Banner -->
+<section class="py-stack-lg px-margin-desktop bg-bauhaus-red text-white text-center">
 <div class="max-w-4xl mx-auto flex flex-col items-center">
-<h2 class="text-5xl md:text-7xl mb-stack-lg text-white hero-title uppercase leading-[0.9] font-black font-headline">
+<h2 class="text-5xl md:text-7xl mb-8 text-white hero-title uppercase leading-[0.9] font-black font-headline">
             Your next patient inquiry is 60 seconds away.
         </h2>
-<button class="bg-primary text-white px-12 py-6 font-label-cta text-lg uppercase tracking-[0.1em] hover:bg-white hover:text-primary transition-all duration-300 border-4 border-primary rounded-bauhaus shadow-[10px_10px_0px_0px_rgba(255,255,255,0.3)]">
-            Start Velocity Trial
-        </button>
+<a class="inline-block bg-primary text-white px-12 py-6 font-label-cta text-lg uppercase tracking-[0.1em] hover:bg-white hover:text-primary transition-all duration-300 border-4 border-primary rounded-bauhaus shadow-[10px_10px_0px_0px_rgba(255,255,255,0.3)]" href="#contact">
+            Get a Patient Acquisition Audit
+        </a>
 </div>
 </section>
 <!-- Footer -->
-<footer class="w-full px-margin-desktop py-stack-md flex flex-col md:row justify-between items-center bg-white border-t-4 border-primary gap-6 md:gap-0">
+<footer class="w-full px-margin-desktop py-stack-md flex flex-col md:flex-row justify-between items-center bg-white border-t-4 border-primary gap-6 md:gap-0">
 <div class="font-label-nav text-[18px] font-bold text-primary uppercase">Velocity</div>
 <div class="flex gap-8">
 <a class="font-label-nav text-label-nav text-primary/60 hover:text-primary font-bold uppercase" href="#">Terms</a>
@@ -287,7 +367,7 @@
 <a class="font-label-nav text-label-nav text-primary/60 hover:text-primary font-bold uppercase" href="#">Identity</a>
 </div>
 <div class="font-label-nav text-label-nav text-primary/40 font-medium">
-        © 2024 Velocity Architectural Systems. All rights reserved.
+        © 2024 Velocity Systems. All rights reserved.
     </div>
 </footer>
 <script>
