@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Terms of Service | Velocity Solutions</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&amp;family=Space+Grotesk:wght@400;500;700;800&amp;family=JetBrains+Mono:wght@500&amp;display=swap" rel="stylesheet"/>
+<link href="https://api.fontshare.com/v2/css?f[]=switzer@900&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        colors: {
+          "background": "#f5f0e8",
+          "surface-container-low": "#f2ede5",
+          "on-background": "#1a1a1a",
+          "bauhaus-red": "#e63b2e",
+          "bauhaus-yellow": "#ffcc00",
+          "bauhaus-blue": "#0055ff",
+          "carbon": "#1a1a1a",
+          "chalk": "#f5f0e8",
+          "primary": "#1a1a1a",
+          "on-primary": "#ffffff"
+        },
+        borderRadius: { "DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px", "bauhaus": "0.25rem" },
+        spacing: { "section-v-padding": "140px", "stack-md": "24px", "stack-sm": "8px", "margin-mobile": "24px", "margin-desktop": "80px", "stack-lg": "48px", "gutter": "32px" },
+        fontFamily: {
+          "headline": ["Switzer", "Space Grotesk", "sans-serif"],
+          "display": ["Switzer", "Space Grotesk", "sans-serif"],
+          "body": ["Inter"],
+          "label": ["Space Grotesk"]
+        },
+        fontSize: {
+          "label-cta": ["14px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "700" }],
+          "label-nav": ["13px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }]
+        }
+      }
+    }
+  }
+</script>
+<style>
+  body {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    background-color: #f5f0e8;
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
+  }
+  h1, h2, h3 { font-family: 'Switzer', sans-serif; font-weight: 900; }
+  .hero-title { text-wrap: balance; }
+
+  .legal-body { color: #1a1a1a; }
+  .legal-body p { font-size: 17px; line-height: 1.7; color: rgba(26, 26, 26, 0.82); margin-bottom: 1.1rem; }
+  .legal-body p strong { color: #1a1a1a; font-weight: 700; }
+  .legal-body p.caps {
+    font-size: 14px; line-height: 1.7; letter-spacing: 0.02em;
+    color: rgba(26, 26, 26, 0.78); font-weight: 500;
+  }
+  .legal-body ul { list-style: none; padding-left: 0; margin: 0 0 1.25rem 0; }
+  .legal-body ul li {
+    font-size: 17px; line-height: 1.7; color: rgba(26, 26, 26, 0.82);
+    padding-left: 1.5rem; position: relative; margin-bottom: 0.5rem;
+  }
+  .legal-body ul li::before {
+    content: ""; position: absolute; left: 0; top: 0.85em;
+    width: 0.5rem; height: 2px; background: #0055ff;
+  }
+  .legal-body section + section { margin-top: 4rem; }
+  .legal-body h2 {
+    font-size: clamp(28px, 4vw, 40px); line-height: 1; text-transform: uppercase;
+    color: #1a1a1a; margin-bottom: 1.5rem; letter-spacing: -0.01em;
+  }
+  .legal-body h2 .num {
+    display: block; font-family: 'Switzer', sans-serif; font-weight: 900;
+    font-size: 14px; line-height: 1; letter-spacing: 0.2em;
+    color: #0055ff; margin-bottom: 0.75rem;
+  }
+
+  @media (max-width: 768px) {
+    html, body { overflow-x: hidden; max-width: 100%; }
+    .px-margin-desktop { padding-left: 24px !important; padding-right: 24px !important; }
+    .py-section-v-padding { padding-top: 64px !important; padding-bottom: 64px !important; }
+    header.fixed { padding-left: 20px !important; padding-right: 20px !important; }
+    header button[data-tally-open] {
+      padding: 10px 14px !important; font-size: 11px !important;
+      letter-spacing: 0.04em !important; line-height: 1.1 !important; white-space: nowrap;
+    }
+    .legal-body p, .legal-body ul li { font-size: 16px; line-height: 1.65; }
+    .legal-body p.caps { font-size: 13px; }
+    .legal-body section + section { margin-top: 2.5rem; }
+    iframe[src*="tally.so"] { max-width: 100vw !important; }
+  }
+</style>
+</head>
+<body class="text-on-background selection:bg-bauhaus-yellow selection:text-carbon">
+
+<header class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-margin-desktop h-[72px] bg-white border-b-2 border-primary">
+  <a href="/" class="font-label-nav text-[18px] font-bold tracking-tight text-primary uppercase">Velocity</a>
+  <nav class="hidden md:flex items-center gap-10">
+    <a class="font-label-nav text-label-nav text-primary/60 hover:text-primary transition-colors" href="/">Home</a>
+    <a class="font-label-nav text-label-nav text-primary/60 hover:text-primary transition-colors" href="/privacy">Privacy</a>
+    <a class="font-label-nav text-label-nav text-primary border-b-2 border-primary pb-0.5" href="/terms">Terms</a>
+  </nav>
+  <button type="button" data-tally-open="D4MJJR" class="bg-primary text-white px-6 py-2.5 font-label-cta text-label-cta hover:bg-bauhaus-red transition-colors border-2 border-primary rounded-bauhaus cursor-pointer">Get a Patient Acquisition Audit</button>
+</header>
+
+<section class="pt-[72px] px-margin-desktop bg-bauhaus-blue">
+  <div class="grid grid-cols-12 w-full py-stack-lg">
+    <div class="col-span-12 md:col-span-10 py-12">
+      <p class="font-label-nav text-label-nav text-white/70 uppercase tracking-[0.25em] mb-stack-md">Legal</p>
+      <h1 class="text-[clamp(48px,9vw,104px)] leading-[0.9] font-black hero-title text-white uppercase font-headline">
+        Terms of Service
+      </h1>
+      <div class="mt-stack-lg flex flex-col md:flex-row gap-4 md:gap-12 border-t-2 border-white pt-6 max-w-2xl">
+        <div>
+          <span class="block font-label-nav text-label-nav text-white/70 uppercase tracking-[0.2em]">Effective</span>
+          <span class="font-label-nav text-base text-white font-bold uppercase">May 30, 2026</span>
+        </div>
+        <div>
+          <span class="block font-label-nav text-label-nav text-white/70 uppercase tracking-[0.2em]">Last updated</span>
+          <span class="font-label-nav text-base text-white font-bold uppercase">May 30, 2026</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<main class="py-section-v-padding px-margin-desktop bg-white">
+  <div class="max-w-3xl legal-body">
+
+    <p>These Terms of Service ("Terms") govern your access to and use of the website, products, and services offered by Velocity Solutions ("Velocity," "we," "us," or "our") — collectively, the "Services."</p>
+    <p>By accessing or using the Services, you agree to be bound by these Terms and our <a class="underline hover:text-bauhaus-red" href="/privacy">Privacy Policy</a>. If you do not agree, do not use the Services.</p>
+
+    <section>
+      <h2><span class="num">01</span>Eligibility</h2>
+      <p>You must be at least 18 years old and legally able to enter into a binding agreement to use the Services. If you are using the Services on behalf of a dental practice or other entity, you represent that you have the authority to bind that entity to these Terms.</p>
+    </section>
+
+    <section>
+      <h2><span class="num">02</span>The Services</h2>
+      <p>Velocity provides patient acquisition and lead response systems for dental practices, including the Patient Acquisition Audit and related consultation and engagement services. The specific scope, deliverables, pricing, and terms of any paid engagement will be set out in a separate agreement, statement of work, or order form.</p>
+      <p>This website and the Patient Acquisition Audit request form are informational and lead-intake tools. Submitting an audit request does not create a paid engagement between you and Velocity.</p>
+    </section>
+
+    <section>
+      <h2><span class="num">03</span>Account Information and Submissions</h2>
+      <p>When you submit information through our forms, you agree that the information you provide is accurate, current, and complete to the best of your knowledge. You are responsible for the accuracy of any information you submit.</p>
+    </section>
+
+    <section>
+      <h2><span class="num">04</span>Communications Consent</h2>
+      <p>By submitting an audit request, you agree that Velocity may contact you at the email address and phone number you provide for the purpose of responding to your inquiry, scheduling consultations, and following up on your request.</p>
+      <p><strong>Email.</strong> You agree to receive transactional emails related to your inquiry. You may unsubscribe from marketing emails at any time using the link in our messages.</p>
+      <p><strong>SMS / text messages.</strong> You will only receive text messages from Velocity if you have explicitly opted in via the consent checkbox on our form. SMS opt-in is optional and is not a condition of any purchase. Message frequency varies. Message and data rates may apply. Reply STOP to unsubscribe, HELP for help. See our <a class="underline hover:text-bauhaus-red" href="/privacy">Privacy Policy</a> for full SMS terms.</p>
+    </section>
+
+    <section>
+      <h2><span class="num">05</span>Acceptable Use</h2>
+      <p>You agree not to:</p>
+      <ul>
+        <li>Use the Services for any unlawful, fraudulent, or harmful purpose</li>
+        <li>Submit false, misleading, or stolen information</li>
+        <li>Attempt to gain unauthorized access to the Services, our systems, or other users' data</li>
+        <li>Interfere with, disrupt, or impose an unreasonable load on the Services</li>
+        <li>Reverse engineer, decompile, or attempt to extract source code from the Services</li>
+        <li>Use automated systems (bots, scrapers, crawlers) to access the Services except as expressly permitted</li>
+        <li>Use the Services to send spam, harassment, or unsolicited communications</li>
+        <li>Violate any applicable law, regulation, or third-party right</li>
+      </ul>
+      <p>We reserve the right to suspend or terminate access to the Services for any user who violates these Terms.</p>
+    </section>
+
+    <section>
+      <h2><span class="num">06</span>Intellectual Property</h2>
+      <p>The Services, including all content, design, code, text, graphics, logos, and trademarks, are owned by Velocity or our licensors and are protected by intellectual property laws. Except as expressly permitted in these Terms, you may not copy, modify, distribute, sell, lease, or create derivative works of any part of the Services without our prior written consent.</p>
+      <p>The Velocity name and logo are trademarks of Velocity Solutions. You may not use them without our prior written permission.</p>
+    </section>
+
+    <section>
+      <h2><span class="num">07</span>Your Content</h2>
+      <p>If you submit information, feedback, or other content to us, you grant Velocity a non-exclusive, worldwide, royalty-free license to use, reproduce, and process that content as necessary to provide the Services, respond to you, and improve our offerings. You represent that you have the right to submit any content you provide and that it does not violate any third-party rights.</p>
+    </section>
+
+    <section>
+      <h2><span class="num">08</span>Third-Party Services</h2>
+      <p>The Services may integrate with or link to third-party services (for example, form hosting, SMS delivery, analytics, and payment processors). We are not responsible for the practices, content, or policies of third parties. Your use of any third-party service is governed by that service's terms and privacy policy.</p>
+    </section>
+
+    <section>
+      <h2><span class="num">09</span>Disclaimer of Warranties</h2>
+      <p class="caps">THE SERVICES ARE PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, WHETHER EXPRESS, IMPLIED, OR STATUTORY. TO THE FULLEST EXTENT PERMITTED BY LAW, VELOCITY DISCLAIMS ALL WARRANTIES, INCLUDING IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT, AND ANY WARRANTIES ARISING FROM COURSE OF DEALING OR USAGE OF TRADE.</p>
+      <p class="caps">WE DO NOT WARRANT THAT THE SERVICES WILL BE UNINTERRUPTED, SECURE, ERROR-FREE, OR THAT ANY DEFECTS WILL BE CORRECTED. ANY RESULTS, METRICS, OR OUTCOMES REFERENCED ON THE SERVICES (INCLUDING RESPONSE TIMES, CONSULTATION RATES, OR REVENUE FIGURES) ARE ILLUSTRATIVE AND DO NOT GUARANTEE THE RESULTS YOU WILL ACHIEVE.</p>
+    </section>
+
+    <section>
+      <h2><span class="num">10</span>Limitation of Liability</h2>
+      <p class="caps">TO THE FULLEST EXTENT PERMITTED BY LAW, VELOCITY AND ITS OFFICERS, DIRECTORS, EMPLOYEES, AND AGENTS WILL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, EXEMPLARY, OR PUNITIVE DAMAGES, OR FOR ANY LOSS OF PROFITS, REVENUE, DATA, GOODWILL, OR BUSINESS OPPORTUNITY, ARISING OUT OF OR RELATED TO YOUR USE OF THE SERVICES — WHETHER IN CONTRACT, TORT, OR OTHERWISE — EVEN IF WE HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.</p>
+      <p class="caps">OUR TOTAL CUMULATIVE LIABILITY FOR ANY CLAIM ARISING OUT OF OR RELATED TO THE SERVICES WILL NOT EXCEED THE GREATER OF (A) THE AMOUNT YOU PAID US IN THE TWELVE MONTHS PRECEDING THE CLAIM, OR (B) ONE HUNDRED U.S. DOLLARS ($100).</p>
+      <p>Some jurisdictions do not allow the exclusion or limitation of certain damages, so portions of this section may not apply to you.</p>
+    </section>
+
+    <section>
+      <h2><span class="num">11</span>Indemnification</h2>
+      <p>You agree to defend, indemnify, and hold harmless Velocity and its officers, directors, employees, and agents from and against any claims, liabilities, damages, losses, and expenses (including reasonable attorneys' fees) arising out of or related to (a) your use of the Services, (b) your violation of these Terms, or (c) your violation of any third-party right.</p>
+    </section>
+
+    <section>
+      <h2><span class="num">12</span>Termination</h2>
+      <p>We may suspend or terminate your access to the Services at any time, with or without notice, for any reason — including if we believe you have violated these Terms. Upon termination, the provisions of these Terms that by their nature should survive (including Sections 6, 9, 10, 11, and 13) will continue to apply.</p>
+    </section>
+
+    <section>
+      <h2><span class="num">13</span>Governing Law and Dispute Resolution</h2>
+      <p>These Terms are governed by the laws of the State of Missouri, without regard to its conflict-of-laws principles. Any dispute arising out of or related to these Terms or the Services will be brought exclusively in the state or federal courts located in Boone County, Missouri, and you consent to the personal jurisdiction of those courts.</p>
+    </section>
+
+    <section>
+      <h2><span class="num">14</span>Changes to These Terms</h2>
+      <p>We may update these Terms from time to time. When we do, we will update the "Last updated" date at the top of this page. For material changes, we will provide additional notice. Your continued use of the Services after changes take effect constitutes acceptance of the updated Terms.</p>
+    </section>
+
+    <section>
+      <h2><span class="num">15</span>Miscellaneous</h2>
+      <p><strong>Entire agreement.</strong> These Terms, together with our Privacy Policy and any separate written agreement between you and Velocity, constitute the entire agreement between you and us regarding the Services.</p>
+      <p><strong>Severability.</strong> If any provision of these Terms is held unenforceable, the remaining provisions will remain in full force and effect.</p>
+      <p><strong>No waiver.</strong> Our failure to enforce any provision of these Terms is not a waiver of our right to do so later.</p>
+      <p><strong>Assignment.</strong> You may not assign or transfer your rights under these Terms without our prior written consent. We may assign these Terms freely.</p>
+    </section>
+
+    <section>
+      <h2><span class="num">16</span>Contact</h2>
+      <p>Questions about these Terms should be directed to:</p>
+      <p><strong>Velocity Solutions</strong><br/>Email: admin@velocityhq.co</p>
+    </section>
+
+  </div>
+</main>
+
+<footer class="w-full px-margin-desktop py-stack-md flex flex-col md:flex-row justify-between items-center bg-white border-t-4 border-primary gap-6 md:gap-0">
+  <a href="/" class="font-label-nav text-[18px] font-bold text-primary uppercase">Velocity</a>
+  <div class="flex gap-8">
+    <a class="font-label-nav text-label-nav text-primary font-bold uppercase border-b-2 border-primary pb-0.5" href="/terms">Terms</a>
+    <a class="font-label-nav text-label-nav text-primary/60 hover:text-primary font-bold uppercase" href="/privacy">Privacy</a>
+  </div>
+  <div class="font-label-nav text-label-nav text-primary/40 font-medium">© 2026 Velocity Solutions. All rights reserved.</div>
+</footer>
+
+<script async src="https://tally.so/widgets/embed.js"></script>
+</body></html>
