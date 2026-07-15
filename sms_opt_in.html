@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Appointment Request &amp; SMS Consent — Velocity</title>
+<style>
+  :root{--ink:#1a1d21;--soft:#5b626b;--line:#d6dce4;--brand:#0e9f8e;--bg:#f1f5f9;--card:#fff;--link:#2563eb;}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font:16px/1.55 -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:620px;margin:0 auto;padding:40px 20px 64px}
+  .note{background:#eef6f4;border:1px solid #bfe5dd;border-radius:12px;padding:14px 16px;font-size:14px;color:#0b5e53;margin-bottom:24px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:28px 26px;box-shadow:0 1px 2px rgba(16,24,40,.05),0 10px 30px rgba(16,24,40,.06)}
+  .brand{display:flex;align-items:center;gap:12px;margin-bottom:6px}
+  .logo{width:42px;height:42px;border-radius:11px;background:linear-gradient(135deg,var(--brand),#1ec8b4);
+    color:#fff;font-weight:800;font-size:20px;display:grid;place-items:center}
+  h1{font-size:22px;margin:0;letter-spacing:-.3px}
+  .sub{color:var(--soft);font-size:14px;margin:2px 0 22px}
+  label{display:block;font-weight:650;font-size:14px;margin:16px 0 6px}
+  input,textarea{width:100%;font:inherit;padding:11px 13px;border:1px solid var(--line);border-radius:10px;background:#fbfcfd;color:var(--ink)}
+  input:focus,textarea:focus{outline:2px solid #0e9f8e22;border-color:var(--brand)}
+  textarea{min-height:74px;resize:vertical}
+  .consent{display:flex;gap:12px;align-items:flex-start;background:#f6faf9;border:1px solid var(--brand);
+    border-radius:12px;padding:14px 15px;margin:22px 0 6px}
+  .consent input{width:20px;height:20px;margin-top:2px;flex:none;accent-color:var(--brand)}
+  .consent .txt{font-size:13.5px;line-height:1.5;color:var(--ink)}
+  .consent a{color:var(--link)}
+  button{margin-top:20px;width:100%;font:inherit;font-weight:700;color:#fff;background:var(--brand);
+    border:none;border-radius:11px;padding:13px;cursor:pointer}
+  button:hover{filter:brightness(1.05)}
+  .foot{color:var(--soft);font-size:12.5px;margin-top:16px;text-align:center}
+  .req{color:var(--brand)}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="note">
+      This page shows the SMS opt-in consent that new patients complete on Velocity-powered dental
+      practice websites. Checking the box is required before any text message is sent, and consent is
+      never a condition of treatment.
+    </div>
+
+    <form class="card" onsubmit="return false;">
+      <div class="brand">
+        <div class="logo">V</div>
+        <div>
+          <h1>Request an Appointment</h1>
+          <div class="sub">Powered by Velocity · velocityhq.co</div>
+        </div>
+      </div>
+
+      <label>Full name <span class="req">*</span></label>
+      <input type="text" placeholder="Your name" autocomplete="name">
+
+      <label>Mobile phone <span class="req">*</span></label>
+      <input type="tel" placeholder="(555) 555-0123" autocomplete="tel">
+
+      <label>Email</label>
+      <input type="email" placeholder="you@example.com" autocomplete="email">
+
+      <label>How can we help?</label>
+      <textarea placeholder="e.g. New patient, tooth pain, need to be seen this week"></textarea>
+
+      <div class="consent">
+        <input type="checkbox" id="sms" aria-label="SMS consent">
+        <div class="txt">
+          I agree to receive text messages from my dental practice about my appointment request,
+          including automated and AI-assisted replies. Message frequency varies. Message &amp; data
+          rates may apply. Reply <strong>STOP</strong> to opt out, <strong>HELP</strong> for help.
+          Consent is not a condition of purchase or treatment. See our
+          <a href="https://velocityhq.co/terms">Terms of Service</a> and
+          <a href="https://velocityhq.co/privacy">Privacy Policy</a>.
+        </div>
+      </div>
+
+      <button type="submit">Request Appointment</button>
+      <div class="foot">You can reply STOP at any time to unsubscribe.</div>
+    </form>
+  </div>
+</body>
+</html>
