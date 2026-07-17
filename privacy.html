@@ -12,15 +12,15 @@
     theme: {
       extend: {
         colors: {
-          "background": "#f5f0e8",
-          "surface-container-low": "#f2ede5",
-          "on-background": "#1a1a1a",
-          "bauhaus-red": "#e63b2e",
-          "bauhaus-yellow": "#ffcc00",
-          "bauhaus-blue": "#0055ff",
-          "carbon": "#1a1a1a",
-          "chalk": "#f5f0e8",
-          "primary": "#1a1a1a",
+          "background": "#ffffff",
+          "surface-container-low": "#f3f4f6",
+          "on-background": "#0c0c0c",
+          "bauhaus-red": "#b91621",
+          "bauhaus-yellow": "#fde68a",
+          "bauhaus-blue": "#2563eb",
+          "carbon": "#0c0c0c",
+          "chalk": "#f3f4f6",
+          "primary": "#0c0c0c",
           "on-primary": "#ffffff"
         },
         borderRadius: { "DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px", "bauhaus": "0.25rem" },
@@ -43,7 +43,7 @@
   body {
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
-    background-color: #f5f0e8;
+    background-color: #0d0f12;
     font-family: 'Inter', sans-serif;
     scroll-behavior: smooth;
   }
@@ -51,27 +51,27 @@
   .hero-title { text-wrap: balance; }
 
   /* Long-form editorial typography */
-  .legal-body { color: #1a1a1a; }
-  .legal-body p { font-size: 17px; line-height: 1.7; color: rgba(26, 26, 26, 0.82); margin-bottom: 1.1rem; }
-  .legal-body p strong { color: #1a1a1a; font-weight: 700; }
+  .legal-body { color: #313842; }
+  .legal-body p { font-size: 17px; line-height: 1.7; color: rgba(232, 234, 237, 0.82); margin-bottom: 1.1rem; }
+  .legal-body p strong { color: #313842; font-weight: 700; }
   .legal-body ul { list-style: none; padding-left: 0; margin: 0 0 1.25rem 0; }
   .legal-body ul li {
-    font-size: 17px; line-height: 1.7; color: rgba(26, 26, 26, 0.82);
+    font-size: 17px; line-height: 1.7; color: rgba(232, 234, 237, 0.82);
     padding-left: 1.5rem; position: relative; margin-bottom: 0.5rem;
   }
   .legal-body ul li::before {
     content: ""; position: absolute; left: 0; top: 0.85em;
-    width: 0.5rem; height: 2px; background: #e63b2e;
+    width: 0.5rem; height: 2px; background: #2fd4bf;
   }
   .legal-body section + section { margin-top: 4rem; }
   .legal-body h2 {
     font-size: clamp(28px, 4vw, 40px); line-height: 1; text-transform: uppercase;
-    color: #1a1a1a; margin-bottom: 1.5rem; letter-spacing: -0.01em;
+    color: #313842; margin-bottom: 1.5rem; letter-spacing: -0.01em;
   }
   .legal-body h2 .num {
     display: block; font-family: 'Switzer', sans-serif; font-weight: 900;
     font-size: 14px; line-height: 1; letter-spacing: 0.2em;
-    color: #e63b2e; margin-bottom: 0.75rem;
+    color: #2fd4bf; margin-bottom: 0.75rem;
   }
 
   /* Mobile optimization */
@@ -88,6 +88,50 @@
     .legal-body section + section { margin-top: 2.5rem; }
     iframe[src*="tally.so"] { max-width: 100vw !important; }
   }
+
+
+/* ===== DASHBOARD DARK THEME — colors only (exact tokens from live dashboard) ===== */
+body{background:#0d0f12!important;color:#e8eaed!important}
+::selection{background:#2fd4bf!important;color:#0d0f12!important}
+.bg-white{background-color:#16191e!important}
+.bg-chalk{background-color:#14171b!important}
+.bg-surface-container-low{background-color:#14171b!important}
+.bg-primary{background-color:#0d0f12!important}
+.bg-bauhaus-yellow{background-color:#0d0f12!important}
+.bg-bauhaus-red{background-color:#3a1c1a!important}
+.bg-bauhaus-blue{background-color:#16244a!important}
+button[data-tally-open]{background-color:#2fd4bf!important;color:#06201a!important;border-color:#2fd4bf!important}
+button[data-tally-open]:hover{background-color:#26b3a3!important;color:#06201a!important}
+.text-primary{color:#e8eaed!important}
+.text-primary\/80{color:rgba(232,234,237,.82)!important}
+.text-primary\/70{color:rgba(232,234,237,.72)!important}
+.text-primary\/60{color:rgba(232,234,237,.62)!important}
+.text-primary\/50{color:rgba(232,234,237,.52)!important}
+.text-primary\/40{color:rgba(232,234,237,.42)!important}
+.text-white{color:#e8eaed!important}
+.text-white\/80{color:rgba(232,234,237,.8)!important}
+.text-white\/70{color:rgba(232,234,237,.7)!important}
+.text-white\/60{color:rgba(232,234,237,.6)!important}
+.text-bauhaus-red{color:#ff6a59!important}
+.text-bauhaus-blue{color:#6aa1ff!important}
+.text-bauhaus-yellow{color:#2fd4bf!important}
+.text-\[\#1f883d\]{color:#5fe0aa!important}
+.border-primary{border-color:#262b32!important}
+.border-white{border-color:#262b32!important}
+.border-white\/20{border-color:rgba(255,255,255,.08)!important}
+.border-bauhaus-red{border-color:#ff6a59!important}
+.border-bauhaus-blue{border-color:#6aa1ff!important}
+.border-bauhaus-yellow{border-color:#2fd4bf!important}
+.hover\:bg-bauhaus-red:hover{background-color:#3a1c1a!important}
+.hover\:bg-bauhaus-blue:hover{background-color:#16244a!important}
+.hover\:bg-bauhaus-yellow:hover{background-color:#322b0e!important}
+.hover\:bg-white:hover{background-color:#1a2422!important}
+.hover\:text-primary:hover{color:#ffffff!important}
+.hover\:text-primary\/80:hover{color:rgba(232,234,237,.82)!important}
+.hover\:text-bauhaus-red:hover{color:#ff8a7d!important}
+.group:hover .group-hover\:text-primary\/80{color:rgba(232,234,237,.82)!important}
+.group:hover .group-hover\:text-primary{color:#e8eaed!important}
+/* ===== end dark theme ===== */
 </style>
 </head>
 <body class="text-on-background selection:bg-bauhaus-yellow selection:text-carbon">
